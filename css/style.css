@@ -105,7 +105,7 @@ header div >  p {
 }
 header div >  p > i {
   position: absolute;
-  top : 5px;
+  top : 10px;
   left: -34px;
 }
 
@@ -285,4 +285,93 @@ footer a {
   border: 3px solid white;
   padding: 5px;
   /*margin: 3%;*/
+}
+
+/* ----------------------- > media 600px ----------------*/
+/* ------------------------------------------------------*/
+
+@media (min-width:700px) {
+
+header {
+  z-index: 2;
+}
+
+header div:last-child p {
+  position: relative;
+  top : -65px;
+  left: -6em;
+}
+header div:last-child p i {
+  font-size: 5em;
+  top: -30px;
+}
+header > div > nav > div ul {
+  display: block;
+  width: 280px;
+  font-size: 1.3em;
+  position: relative;
+  top: -20px;
+}
+header div nav div {
+  top: -60px;
+  position: absolute;
+}
+
+header nav .fa-bars {
+  display: none;
+}
+
+header > div > nav > div:hover ul,
+header > div > nav > div:focus ul {
+ display: block;
+ position: relative;
+ width: 350px;
+ left: 0px;
+}
+
+header > div > nav > div > ul > li {
+  display: inline;
+}
+main, aside {
+  display: inline-block;
+}
+
+aside {
+  position: absolute;
+  right: 0;
+  margin: 0 3%;
+  top: 150px;
+  width: 25%;
+  z-index: 1;
+}
+
+main > aside > div > figure {
+  width: 47%;
+  /*max-width: 50px;*/
+  margin: 5px 1px;
+  display: inline-block;
+}
+
+main > aside > div > figure:nth-last-child(-n+5) {
+  display: inline-block;
+}
+
+main, #presentation {
+  width: 60%;
+  /*height: 60%;*/
+  /*margin: auto;*/
+  margin: 150px 10% 0 5%;
+}
+#presentation > img {
+  float: left;
+  margin: 0 3em 0 0;
+}
+#tarifs aside, #contact aside {
+  display: inline-block;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  bottom: -170px;
 }
