@@ -99,6 +99,16 @@ header > p > i {
   left: -15%;
 }
 
+/* mise en page main */
+/* ----------------- */
+
+/* mise ne page #presentation */
+/* -------------------------- */
+
+#presentation video {
+  display: none;
+}
+
 /* mise en page footer */
 /* ------------------- */
 
