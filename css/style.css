@@ -23,6 +23,9 @@ header > div, header > nav, header > p, header > div > img, header > div > h1 {
   display: inline-block;
 }
 
+ul {
+  list-style: none;
+}
 /* mise en page header */
 /* ------------------- */
 
@@ -62,41 +65,59 @@ header div:first-child img {
   border-radius: 5em;
 }
 
-header nav {
-  width: 10%;
+header div:last-child {
+  width: 40%;
   position: relative;
-  top : -50px;
+  top: -30px;
+  left : 40px;
 }
 
-header nav div ul {
+header div nav ul {
   display: none;
+  color: white;
+  font-weight: bold;
+  background:rgb(62, 182, 255);
 }
 
-header nav div a {
+header div nav div:focus ul,
+header div nav div:hover ul{
   display: block;
+  position: absolute;
+  width: 120px;
+  left: -40px;
 }
 
-header nav div i:focus ul li,
-header nav div i:hover ul li{
-  /*display: block;*/
-  /*height: 30em;*/
-  /*color: black;*/
-}
-
-
-header > p {
-  display: 40%;
+header div nav div ul li {
+  text-align: center;
+  padding: 5px;
+  width: 130px;
   position: relative;
-  top: -60%;
-  left: 5%;
+  left : -30px;
+}
+
+
+header div nav div ul li:hover {
+  background-color: white;
+  color: rgb(62, 182, 255);
+}
+
+header > div:last-child p {
+  position: relative;
   font-size: 1.3em;
   font-weight: bold;
 }
 
-header > p > i {
-  position: absolute;
-  top : -50%;
-  left: -15%;
+
+header div >  p > i {
+  position: relative;
+  top : 20px;
+  left: 15px;
+}
+
+header > div:last-child > nav div {
+  position: relative;
+  top: -20px;
+  left: 40%;
 }
 
 /* mise en page main */
