@@ -13,13 +13,14 @@ body {
   height: 100%;
   margin: 0%;
   padding: 0;
+  /*position: relative;*/
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
-header > div, header > nav, header > p, header > div > img, header > div > h1,
+header > div, header p, header div > img,
 .fig > figure {
   display: inline-block;
 }
@@ -65,13 +66,6 @@ header div:first-child img {
   border-radius: 6em;
 }
 
-header div:last-child {
-  width: 40%;
-  position: relative;
-  top: -30px;
-  left : 40px;
-}
-
 header div nav ul {
   display: none;
   color: white;
@@ -95,28 +89,29 @@ header div nav div ul li {
   left : -30px;
 }
 
-
 header div nav div ul li:hover {
   background-color: white;
   color: rgb(62, 182, 255);
 }
 
-header > div:last-child p {
+header > div:last-child {
   position: relative;
+  top: -40%;
   font-size: 1.3em;
   font-weight: bold;
 }
-
-
+header div >  p {
+  font-size: 1.4rem;
+}
 header div >  p > i {
   position: absolute;
-  top : -20%;
-  left: -10%;
+  top : 5px;
+  left: -34px;
 }
 
-header > div:last-child > nav div {
+header > div:last-child > nav {
   position: relative;
-  top: -20px;
+  /*top: -20px;*/
   left: 40%;
 }
 
@@ -126,6 +121,7 @@ header > div:last-child > nav div {
 h2, h3, aside figcaption {
   color : rgb(62, 182, 255);
   text-shadow: 1px 1px black;
+  text-align: center;
 }
 h2 {
 font-size:1.8em;
@@ -139,6 +135,11 @@ main {
   width: 90%;
   margin: 180px auto auto auto;
   text-align: justify;
+}
+
+main > section {
+  clear: both;
+  margin: 4em;
 }
 /* mise ne page #presentation */
 /* -------------------------- */
@@ -154,7 +155,7 @@ main {
 #presentation > img {
   max-width: 250px;
   width: 60%;
-  margin : 0px 20% 0px 20% ;
+  margin : 0% 20%;
 
 }
 
@@ -163,10 +164,74 @@ main {
   max-width: 200px;
   width: 30%;
   margin-left: 3%;
+  border: 3px solid rgb(62, 182, 255);
+}
+
+/* mise en page tarifs */
+/* ------------------- */
+
+#tarifs > img {
+  float: left;
+  max-width: 120px;
+  margin-right: 5%;
+}
+
+#tarifs > p {
+  width: 90%;
+}
+
+#tarifs table {
+  text-align: center;
+  margin: auto;
+  background-color: rgb(62, 182, 255);
+}
+
+#tarifs tr {
+  background-color: white;
+}
+
+/*#tarifs td, #tarifs th {
+  margin: 1px;
+}*/
+/* mise en page contact */
+/* -------------------- */
+
+#contact address {
+  color: rgb(62, 182, 255);
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+#contact iframe {
+  margin: auto 10%;
+  width: 80%;
+}
+
+#contact form {
+  position: relative;
+}
+
+#contact form input {
+  position: absolute;
+  left: 5em;
+}
+
+#contact form textarea {
+  position: relative;
+  left: 2em;
+  margin-top: 3px;
 }
 /* mise en page aside */
 /* ------------------- */
 
+#tarifs > aside, #contact > aside {
+  display: none;
+}
+
+main > aside {
+  clear: both;
+}
 
 main > aside > div {
   width: 100%;
@@ -174,13 +239,14 @@ main > aside > div {
   padding-top: 10px;
   margin: 10px 0;
 }
+
 main > aside > div > figure {
   background-color: rgb(255, 197, 117);
   width: 30%;
   margin: 0px 4px;
   border-radius: 20rem;
   text-align: center;
-  padding-top: 0.7%;
+  padding-top: 0.55%;
   position: relative;
 }
 
