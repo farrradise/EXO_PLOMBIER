@@ -19,8 +19,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
-header > div, header > nav, header > p, header > div > img, header > div > h1
-main > aside > div > figure{
+header > div, header > nav, header > p, header > div > img, header > div > h1,
+.fig > figure {
   display: inline-block;
 }
 
@@ -123,7 +123,7 @@ header > div:last-child > nav div {
 /* mise en page main */
 /* ----------------- */
 
-h2, h3 {
+h2, h3, aside figcaption {
   color : rgb(62, 182, 255);
   text-shadow: 0px 1px 1px black;
 }
@@ -158,18 +158,47 @@ main {
 
 }
 
-
+#presentation > section p img {
+  float: right;
+  max-width: 200px;
+  width: 30%;
+  margin-left: 3%;
+}
 /* mise en page aside */
 /* ------------------- */
 
+
+main > aside > div {
+  width: 100%;
+  border-top: 4px solid rgb(62, 182, 255);
+  padding-top: 10px;
+  margin: 10px 0;
+}
 main > aside > div > figure {
+  background-color: rgb(255, 197, 117);
   width: 30%;
+  margin: 0px 4px;
+  border-radius: 20rem;
+  text-align: center;
+  padding-top: 0.7%;
+  position: relative;
 }
 
-main > aside > div > figure:nth-of-type(-n+5){
+main > aside > div > figure:nth-last-of-type(-n+5){
   display: none;
 }
 
+figcaption {
+  position: absolute;
+  bottom : 0em;
+  color: rgb(62, 182, 255);
+  font-weight: bold;
+}
+
+main > aside> div > figure > img {
+  width: 95%;
+  border-radius: 6rem;
+}
 /* mise en page footer */
 /* ------------------- */
 
