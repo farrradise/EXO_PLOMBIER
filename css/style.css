@@ -1,0 +1,96 @@
+/* code couleur */
+/*--------------*/
+/* orange rgb(255, 197, 117)*/
+/* bleu color: rgb(62, 182, 255);  */
+
+
+/* mise en page générale */
+/* --------------------- */
+
+body {
+  font-size: 14px;
+  font-family: verdana, sans-serif;
+  height: 100%;
+  margin: 0%;
+  padding: 0;
+}
+
+header > div, header > nav, header > p, header > div > img, header > div > h1 {
+  display: inline-block;
+}
+
+/* mise en page header */
+/* ------------------- */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border: 1px solid black;
+  background-color: rgb(62, 182, 255);
+  height: 120px;
+  color: white;
+  border-bottom: 5px solid rgb(255, 197, 117);
+}
+
+header div:first-child {
+  width: 45%;
+}
+
+header h1 {
+  position: absolute;
+  color: rgb(255, 197, 117);
+  text-shadow: 2px 2px 3px black;
+  top: 24%;
+  font-variant-caps: small-caps;
+  left: 5px;
+  font-size: 3em;
+}
+
+header h1 span {
+  color: white;
+  font-size: 1.3em;
+  font-style: italic;
+}
+header div:first-child img {
+  margin: 10px 10px 0px 10px;
+  height: 150px;
+  border-radius: 5em;
+}
+
+header nav {
+  width: 10%;
+  position: relative;
+  top : -50px;
+}
+
+header nav div ul {
+  display: none;
+}
+
+header nav div a {
+  display: block;
+}
+
+header nav div i:focus ul li,
+header nav div i:hover ul li{
+  /*display: block;*/
+  /*height: 30em;*/
+  /*color: black;*/
+}
+
+
+header > p {
+  display: 40%;
+  position: relative;
+  top: -60%;
+  left: 5%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header > p > i {
+  position: absolute;
+  top : -50%;
+  left: -15%;
+}
