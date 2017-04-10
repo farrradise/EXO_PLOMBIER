@@ -109,9 +109,9 @@ header > div:last-child p {
 
 
 header div >  p > i {
-  position: relative;
-  top : 20px;
-  left: 15px;
+  position: absolute;
+  top : -20%;
+  left: -10%;
 }
 
 header > div:last-child > nav div {
@@ -125,7 +125,7 @@ header > div:last-child > nav div {
 
 h2, h3, aside figcaption {
   color : rgb(62, 182, 255);
-  text-shadow: 0px 1px 1px black;
+  text-shadow: 1px 1px black;
 }
 h2 {
 font-size:1.8em;
