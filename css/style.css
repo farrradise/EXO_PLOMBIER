@@ -13,7 +13,6 @@ body {
   height: 100%;
   margin: 0%;
   padding: 0;
-  /*position: relative;*/
 }
 
 a {
@@ -190,9 +189,6 @@ main > section {
   background-color: white;
 }
 
-/*#tarifs td, #tarifs th {
-  margin: 1px;
-}*/
 /* mise en page contact */
 /* -------------------- */
 
@@ -332,7 +328,8 @@ header > div > nav > div:focus ul {
 header > div > nav > div > ul > li {
   display: inline;
 }
-main, aside {
+
+main, aside, main > aside > div > figure:nth-last-child(-n+5) {
   display: inline-block;
 }
 
@@ -349,10 +346,6 @@ main > aside > div > figure {
   width: 47%;
   /*max-width: 50px;*/
   margin: 5px 1px;
-  display: inline-block;
-}
-
-main > aside > div > figure:nth-last-child(-n+5) {
   display: inline-block;
 }
 
@@ -374,4 +367,5 @@ footer {
   position: relative;
   width: 100%;
   bottom: -170px;
+}
 }
